@@ -1,0 +1,25 @@
+echobyte.co.uk menu tab generator
+
+(C) Gitesh Khodiyar 2002
+
+This is the documentaion for the menu code written by Gitesh Khodiyar for the echobyte.co.uk website. These instructions show how to generate the navigational menu for the website based on a folder tab view in the real world.
+
+
+1. Edit the HTML and look for the line:
+
+           "strPageList = "zero/welcome.html onetab/welcome.html welcome/welcome.html deduplicate/deduplicate.html ringtones/ringtones.html emailparser/emailparser.html diff/diff.html internetstatus/internetstatus.html about/about.shtml testadd/welcome.html";"
+
+
+2. Between the quotes, you will need to write the menu structure in the format "<tabname>/<webpage>", where <tabname> is the link that will be displayed on the folder menu tab, and <webpage> is the page that is linked to the tab.
+
+3. Run the page in a browser and the javascript will be written automatically. View source and save the page to save the code and you can then incorporate the web tabs in an iframe off your main view page to get a seamless view when tabs are clicked. 
+
+
+You then need to create the physical directory structure to match the tab structure. Simply create folders in the same directory as your index page. The folder names should be the same as the tab names. Within each folder, put the webpage that the tab links to.
+
+
+
+That is it! If you require any support you can reach me at the address below:
+
+gitesh@echobyte.co.uk
+echobyte@gmail.com
