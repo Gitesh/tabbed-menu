@@ -1,0 +1,97 @@
+
+<html>
+  <head>
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" ></head>
+    
+    <link href="css/echobyte.css" rel="stylesheet" type="text/css">
+
+    <body leftmargin="0" topmargin="0" onload="WriteTabs()">
+    
+
+    <SCRIPT language="JavaScript"> 
+      <!-- 
+        function WriteTabs() 
+         { 
+           
+           
+           strPageList = "tab1/tab1.html tab2/tab2.html tab3/tab3.html tab4/tab4.html tab5/tab5.html tab6/tab6.html";
+           tab = strPageList.split(' ');
+           
+           var intCounter=0; 
+           var strRawTabTitle;
+           var strTabTitleIndex;
+           var strLowerTabTitle;
+           var strNormalTabTitle;
+
+           document.write('<html><head><link href="css/echobyte.css" rel="stylesheet" type="text/css"><body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">')
+
+           document.write('</head>')
+
+           document.write('<table class="clsMenuTabs" border="0" cellpadding="0" cellspacing="0" align="center" width="100%"><tr>')
+            
+           document.write('<td nowrap class="clsNonActiveTabCorner" width="10%">&nbsp;</td>')        
+           
+           document.write('<td nowrap id="ImageCell' + intCounter +  '" class="clsNonActiveTabCorner" width="20"><img id="tab' + intCounter + '" src="images/left.png" width="20" height="18" /></td>	')
+            
+
+
+           for (intCounter=1; intCounter<tab.length; intCounter++) 
+            {                    
+            
+              strRawTabTitle = tab[intCounter-1];
+              
+              strTabTitleIndex = strRawTabTitle.indexOf("/");
+               
+              strLowerTabTitle = strRawTabTitle.slice(0,strTabTitleIndex);     
+               
+              strTabTitle = CapitaliseWord(strLowerTabTitle);              
+            
+              document.write('<td nowrap id="PageTab' + intCounter + '" class="clsNonActiveTabLabel"><a href="javascript:TabOnClick(\'' + tab[intCounter-1] + '\'' + ',' + intCounter + ');">' + strTabTitle + '</a></td>')
+                        
+              document.write('<td nowrap id="ImageCell' + intCounter + '"class="clsNonActiveTabCorner" width="20"><img id="tab' + intCounter + '" src="images/middleright.png" width="20" height="18" /></td>')	  
+
+            } 
+
+           strRawTabTitle = tab[tab.length-1];
+           
+           strTabTitleIndex = strRawTabTitle.indexOf("/");
+            
+           strLowerTabTitle = strRawTabTitle.slice(0,strTabTitleIndex);     
+            
+           strTabTitle = CapitaliseWord(strLowerTabTitle);      
+            
+           document.write('<td nowrap id="PageTab' + intCounter + '" class="clsNonActiveTabLabel"><a href="javascript:TabOnClick(\'' + tab[tab.length-1] + '\'' + ',' + intCounter + ');">' + strTabTitle + '</a></td>')
+                       
+           document.write('<td nowrap id="ImageCell' + tab.length + '" class="clsNonActiveTabCorner" width="20"><img id="tab' + tab.length + '" src="images/right.png" width="20" height="18" /></td> ')          
+      
+           document.write('<input type="hidden" id="hidMaxTabs" value="' + tab.length + '">')
+ 
+           document.write('<td nowrap class="clsNonActiveTabCorner" width="10%">&nbsp;</td>         ')
+            
+           document.write('</tr></table>')
+      
+           document.write('<script src="menutabs.js"></script>')
+            
+           document.write('</body>')
+            
+        } 
+        
+        
+      function CapitaliseWord(word)
+       { 
+         
+         strLower = word.toLowerCase() 
+         strUpper = word.toUpperCase() 
+         strNormal = strUpper.substring(0,1) + strLower.substring(1,strLower.length) 
+ 
+         return strNormal
+       } 
+        
+       //-->
+    </SCRIPT> 
+ 
+
+  </body>
+</html>
