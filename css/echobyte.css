@@ -1,0 +1,159 @@
+A
+{
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+A:visited
+{
+  color: #000000;
+  text-decoration: none;
+}
+
+A:active
+{
+  color: #000000;
+}
+
+A:hover
+{
+  color: #000000;
+}
+
+
+.clsMenuTabs
+
+{
+
+  FONT-FAMILY: Verdana;
+
+  FONT-SIZE: 8pt;
+
+  FONT-WEIGHT: bold
+
+}
+
+
+
+.clsMenuTabs A:link
+
+{
+
+ COLOR:#AEAEA6;
+
+}
+
+
+
+.clsMenuTabs A:visited
+
+{
+
+ COLOR:#AEAEA6;
+
+}
+
+
+
+.clsMenuTabs A:hover
+
+{
+
+ COLOR:#000000;
+
+}
+
+
+
+.clsMenuTabs A:active
+
+{
+
+ COLOR:#000000;
+
+}
+
+.clsNonActiveTabCorner
+
+{
+
+  BACKGROUND-COLOR: #FFFFFF;
+
+  COLOR: #CECEC6;
+
+  FONT-FAMILY: Verdana;
+
+  FONT-SIZE: 10pt;
+
+  FONT-WEIGHT: bold;
+
+  TEXT-ALIGN: left;
+
+  BORDER-BOTTOM: solid 3 #CECEC6;
+
+}
+
+.clsNonActiveTabLabel
+
+{
+
+  BACKGROUND-COLOR: #e3eBe2;
+
+  COLOR: #AEAEA6;
+
+  FONT-FAMILY: Verdana;
+
+  FONT-SIZE: 7pt;
+
+  FONT-WEIGHT: normal;
+
+  TEXT-ALIGN: left;
+
+  BORDER-BOTTOM: solid 3 #CECEC6;
+
+}
+
+
+.clsActiveTabLabel
+{
+  BACKGROUND-COLOR: #e3eBe2;
+  COLOR: #000000;
+  FONT-FAMILY: Verdana;
+  FONT-SIZE: 10pt;
+  FONT-WEIGHT: bold;
+  TEXT-ALIGN: left;
+  BORDER-BOTTOM: solid 3 #e3eBe2;
+
+}
+
+.clsActiveTabCorner
+{
+/*  BACKGROUND-COLOR: #FFFFFF;
+  BACKGROUND-IMAGE: url(../images/nonactivecellbar.bmp); */
+  background-repeat: repeat; 
+  COLOR: #000000;
+  BORDER-BOTTOM: solid 3 #e3eBe2;
+}
+
+.clsHeader
+{
+    BORDER-top: solid 3 #ffffff;
+    COLOR: #CECEC6;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center;
+}
+
+.clsFooter
+{
+    BORDER-top: solid 3 #CECEC6;
+    COLOR: #CECEC6;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center;
+}
+
